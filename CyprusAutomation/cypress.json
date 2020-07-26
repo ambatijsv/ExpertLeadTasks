@@ -1,0 +1,12 @@
+{
+    "chromeWebSecurity": false,
+    "experimentalSourceRewriting": true,
+    "appURL": "http://automationpractice.com/index.php",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+    }
+}

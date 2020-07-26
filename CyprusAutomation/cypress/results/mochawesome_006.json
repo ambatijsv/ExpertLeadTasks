@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-26T03:35:55.285Z",
+    "end": "2020-07-26T03:37:13.856Z",
+    "duration": 78571,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ccc79878-bc67-49a8-bcbe-c8d753a9c837",
+      "title": "",
+      "fullFile": "cypress\\integration\\AutomationPracticeRunner.js",
+      "file": "cypress\\integration\\AutomationPracticeRunner.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "792e1be8-4ed5-416f-8113-23986e66dadc",
+          "title": "Automation Practice App Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Acccount Creation in Automation Practice App",
+              "fullTitle": "Automation Practice App Suite Verify Acccount Creation in Automation Practice App",
+              "timedOut": null,
+              "duration": 47078,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homepge.clickSignButton();\nauthPage.enterEmail(this.data.email);\nauthPage.clickOnCreateAnAcoountButton();\naccountCreationPage.clickOnTitleRadioButton();\naccountCreationPage.enterFirstName(this.data.firstName);\naccountCreationPage.enterLastName(this.data.lastName);\naccountCreationPage.enterPassword(this.data.password);\naccountCreationPage.enterCompanyName(this.data.company);\naccountCreationPage.enterAddressOne(this.data.address1);\naccountCreationPage.enterAddressTwo(this.data.address2);\naccountCreationPage.enterCity(this.data.city);\naccountCreationPage.enterState(this.data.state);\naccountCreationPage.enterPostalCode(this.data.zipCode);\naccountCreationPage.enterOtherInfo(this.data.otherInfo);\naccountCreationPage.enterPhoneNumber(this.data.homePhone);\naccountCreationPage.enterMobileNumber(this.data.mobilePhone);\naccountCreationPage.clickOnSubmitButton();\nmyAccountPage.validateMyAccountPageLanding(this.data.myAccountPageTitle, this.data.firstName, this.data.lastName);",
+              "err": {},
+              "uuid": "0b65839f-b72d-469e-89cf-06d406f0d08b",
+              "parentUUID": "792e1be8-4ed5-416f-8113-23986e66dadc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify My Account Page to Home Page Navigation",
+              "fullTitle": "Automation Practice App Suite Verify My Account Page to Home Page Navigation",
+              "timedOut": null,
+              "duration": 6517,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "myAccountPage.backNavigationToHomePage(Cypress.config().appURL, this.data.homePageTitle);\nhomepge.homePageBackValidation();",
+              "err": {},
+              "uuid": "0a0bb7ef-3032-4011-a0f8-c3cf6ccf0211",
+              "parentUUID": "792e1be8-4ed5-416f-8113-23986e66dadc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Dress Page",
+              "fullTitle": "Automation Practice App Suite Verify Dress Page",
+              "timedOut": null,
+              "duration": 12103,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dressPage.clickOnDressTabButton();\ndressPage.validateMyAccountPageLanding(this.data.dressesPageTitle);\ndressPage.verifyMoChecBoxGotSelected();\ndressPage.verifyGridViewItems();",
+              "err": {},
+              "uuid": "df1de940-b086-4a6d-82c2-136e76c2bda4",
+              "parentUUID": "792e1be8-4ed5-416f-8113-23986e66dadc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Dress Page and Grid View",
+              "fullTitle": "Automation Practice App Suite Verify Dress Page and Grid View",
+              "timedOut": null,
+              "duration": 48,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dressPage.verifyGridViewItems();",
+              "err": {},
+              "uuid": "318bbde8-a35a-41d3-be9f-ff76f4c649b7",
+              "parentUUID": "792e1be8-4ed5-416f-8113-23986e66dadc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Dress Page List View",
+              "fullTitle": "Automation Practice App Suite Verify Dress Page List View",
+              "timedOut": null,
+              "duration": 365,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dressPage.verifyListViewItems();\ndressPage.verifyPriceAvailableForAll();",
+              "err": {},
+              "uuid": "5c4e3814-69d1-425a-9b85-c8f61e3920c2",
+              "parentUUID": "792e1be8-4ed5-416f-8113-23986e66dadc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Summwer Dresses filter in Dresses Page",
+              "fullTitle": "Automation Practice App Suite Verify Summwer Dresses filter in Dresses Page",
+              "timedOut": null,
+              "duration": 351,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dressPage.verifyListViewItems();\ndressPage.verifyPriceAvailableForAll();",
+              "err": {},
+              "uuid": "684a3801-2944-4073-bbcc-37a00859da3a",
+              "parentUUID": "792e1be8-4ed5-416f-8113-23986e66dadc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0b65839f-b72d-469e-89cf-06d406f0d08b",
+            "0a0bb7ef-3032-4011-a0f8-c3cf6ccf0211",
+            "df1de940-b086-4a6d-82c2-136e76c2bda4",
+            "318bbde8-a35a-41d3-be9f-ff76f4c649b7",
+            "5c4e3814-69d1-425a-9b85-c8f61e3920c2",
+            "684a3801-2944-4073-bbcc-37a00859da3a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 66462,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-07-26T04:05:09.988Z",
+    "end": "2020-07-26T04:08:23.574Z",
+    "duration": 193586,
+    "testsRegistered": 6,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 5,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "78ff958a-e0b1-4e54-a727-bb2bfd38d541",
+      "title": "",
+      "fullFile": "cypress\\integration\\AutomationPracticeRunner.js",
+      "file": "cypress\\integration\\AutomationPracticeRunner.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6ee131e0-b17f-4978-a0c5-3717dfb3ca4c",
+          "title": "Automation Practice App Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Acccount Creation in Automation Practice App",
+              "fullTitle": "Automation Practice App Suite Verify Acccount Creation in Automation Practice App",
+              "timedOut": null,
+              "duration": 181358,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "homepge.clickSignButton();\nauthPage.enterEmail(this.data.email);\nauthPage.clickOnCreateAnAcoountButton();\naccountCreationPage.clickOnTitleRadioButton();\naccountCreationPage.enterFirstName(this.data.firstName);\naccountCreationPage.enterLastName(this.data.lastName);\naccountCreationPage.enterPassword(this.data.password);\naccountCreationPage.enterCompanyName(this.data.company);\naccountCreationPage.enterAddressOne(this.data.address1);\naccountCreationPage.enterAddressTwo(this.data.address2);\naccountCreationPage.enterCity(this.data.city);\naccountCreationPage.enterState(this.data.state);\naccountCreationPage.enterPostalCode(this.data.zipCode);\naccountCreationPage.enterOtherInfo(this.data.otherInfo);\naccountCreationPage.enterPhoneNumber(this.data.homePhone);\naccountCreationPage.enterMobileNumber(this.data.mobilePhone);\naccountCreationPage.clickOnSubmitButton();\nmyAccountPage.validateMyAccountPageLanding(this.data.myAccountPageTitle, this.data.firstName, this.data.lastName);",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `#id_gender1`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `#id_gender1`, but never found it.\n    at AccountCreationPage.clickOnTitleRadioButton (http://automationpractice.com/__cypress/tests?p=cypress\\integration\\AutomationPracticeRunner.js:113:10)\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress\\integration\\AutomationPracticeRunner.js:35:25)",
+                "diff": null
+              },
+              "uuid": "4a39ce42-8a6b-4ccb-98d4-a9cb8d4bc90d",
+              "parentUUID": "6ee131e0-b17f-4978-a0c5-3717dfb3ca4c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify My Account Page to Home Page Navigation",
+              "fullTitle": "Automation Practice App Suite Verify My Account Page to Home Page Navigation",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "myAccountPage.backNavigationToHomePage(Cypress.config().appURL, this.data.homePageTitle);\nhomepge.homePageBackValidation();",
+              "err": {},
+              "uuid": "2f49c31b-853c-40cb-b786-68bb379e0ffb",
+              "parentUUID": "6ee131e0-b17f-4978-a0c5-3717dfb3ca4c",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Verify Dress Page",
+              "fullTitle": "Automation Practice App Suite Verify Dress Page",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dressPage.clickOnDressTabButton();\ndressPage.validateMyAccountPageLanding(this.data.dressesPageTitle);\ndressPage.verifyMoChecBoxGotSelected();\ndressPage.verifyGridViewItems();",
+              "err": {},
+              "uuid": "923b5fe6-6359-4c6d-ba49-7b4a3c82f137",
+              "parentUUID": "6ee131e0-b17f-4978-a0c5-3717dfb3ca4c",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Verify Dress Page and Grid View",
+              "fullTitle": "Automation Practice App Suite Verify Dress Page and Grid View",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dressPage.verifyGridViewItems();",
+              "err": {},
+              "uuid": "2b0b390f-3979-48e6-8f5c-ae3202fa09ed",
+              "parentUUID": "6ee131e0-b17f-4978-a0c5-3717dfb3ca4c",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Verify Dress Page List View",
+              "fullTitle": "Automation Practice App Suite Verify Dress Page List View",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dressPage.verifyListViewItems();\ndressPage.verifyPriceAvailableForAll();",
+              "err": {},
+              "uuid": "950ffdd5-5036-471f-8052-212dd179c2f1",
+              "parentUUID": "6ee131e0-b17f-4978-a0c5-3717dfb3ca4c",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Verify Summwer Dresses filter in Dresses Page",
+              "fullTitle": "Automation Practice App Suite Verify Summwer Dresses filter in Dresses Page",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dressPage.verifyListViewItems();\ndressPage.verifyPriceAvailableForAll();",
+              "err": {},
+              "uuid": "1796ef8f-dae6-4fa1-84e8-2fcc28445a75",
+              "parentUUID": "6ee131e0-b17f-4978-a0c5-3717dfb3ca4c",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "4a39ce42-8a6b-4ccb-98d4-a9cb8d4bc90d"
+          ],
+          "pending": [],
+          "skipped": [
+            "2f49c31b-853c-40cb-b786-68bb379e0ffb",
+            "923b5fe6-6359-4c6d-ba49-7b4a3c82f137",
+            "2b0b390f-3979-48e6-8f5c-ae3202fa09ed",
+            "950ffdd5-5036-471f-8052-212dd179c2f1",
+            "1796ef8f-dae6-4fa1-84e8-2fcc28445a75"
+          ],
+          "duration": 181358,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

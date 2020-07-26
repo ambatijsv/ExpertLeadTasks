@@ -1,0 +1,19 @@
+{
+  "homePageTitle": "My Store",
+  "email": "gowtham338@ambati.com",
+  "firstName": "Gowtham",
+  "lastName": "Ambati",
+  "password": "Password123",
+  "company": "Mani Tech",
+  "address1": "10 Main Road",
+  "address2": "2nd street",
+  "city": "Chicago",
+  "state": "Illinois",
+  "zipCode": "60007",
+  "otherInfo": "Other Sample Info",
+  "homePhone": "6030660306",
+  "mobilePhone": "6030660306",
+  "aliasName": "Mani Kumar",
+  "myAccountPageTitle": "My account - My Store",
+  "dressesPageTitle" : "Dresses - My Store"
+}
